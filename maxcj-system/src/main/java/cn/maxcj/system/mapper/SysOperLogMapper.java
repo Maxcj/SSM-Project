@@ -1,6 +1,7 @@
 package cn.maxcj.system.mapper;
 
 import cn.maxcj.system.domain.SysOperLog;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Repository
 public interface SysOperLogMapper {
     /**
      * 新增操作日志

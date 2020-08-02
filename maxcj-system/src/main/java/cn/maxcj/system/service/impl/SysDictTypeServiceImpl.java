@@ -159,7 +159,7 @@ public class SysDictTypeServiceImpl implements ISysDictTypeService {
      * @return 结果
      */
     @Override
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public int updateDictType(SysDictType dictType) {
         SysDictType oldDict = dictTypeMapper.selectDictTypeById(dictType.getDictId());
         dictDataMapper.updateDictDataType(oldDict.getDictType(), dictType.getDictType());
@@ -210,8 +210,8 @@ public class SysDictTypeServiceImpl implements ISysDictTypeService {
 
     public String transDictName(SysDictType dictType) {
         StringBuffer sb = new StringBuffer();
-        sb.append("(" + dictType.getDictName() + ")");
-        sb.append("&nbsp;&nbsp;&nbsp;" + dictType.getDictType());
+        sb.append("(").append(dictType.getDictName()).append(")");
+        sb.append("&nbsp;&nbsp;&nbsp;").append(dictType.getDictType());
         return sb.toString();
     }
 }

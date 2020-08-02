@@ -8,6 +8,7 @@ import cn.maxcj.system.domain.SysPost;
 import cn.maxcj.system.mapper.SysPostMapper;
 import cn.maxcj.system.mapper.SysUserPostMapper;
 import cn.maxcj.system.service.ISysPostService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Slf4j
 @Service
 public class SysPostServiceImpl implements ISysPostService {
     @Autowired

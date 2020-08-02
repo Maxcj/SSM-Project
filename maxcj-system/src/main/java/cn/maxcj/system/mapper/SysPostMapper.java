@@ -1,6 +1,7 @@
 package cn.maxcj.system.mapper;
 
 import cn.maxcj.system.domain.SysPost;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Repository
 public interface SysPostMapper {
     /**
      * 查询岗位数据集合

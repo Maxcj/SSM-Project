@@ -1,6 +1,7 @@
 package cn.maxcj.system.mapper;
 
 import cn.maxcj.system.domain.SysRole;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Repository
 public interface SysRoleMapper {
     /**
      * 根据条件分页查询角色数据

@@ -1,6 +1,7 @@
 package cn.maxcj.system.mapper;
 
 import cn.maxcj.system.domain.SysUser;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Repository
 public interface SysUserMapper {
     /**
      * 根据条件分页查询用户列表

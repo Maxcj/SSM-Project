@@ -5,6 +5,7 @@ import cn.maxcj.system.domain.SysDictData;
 import cn.maxcj.system.mapper.SysDictDataMapper;
 import cn.maxcj.system.service.ISysDictDataService;
 import cn.maxcj.system.utils.DictUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Slf4j
 @Service
 public class SysDictDataServiceImpl implements ISysDictDataService {
     @Autowired

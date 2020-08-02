@@ -4,6 +4,7 @@ import cn.maxcj.common.core.text.Convert;
 import cn.maxcj.system.domain.SysOperLog;
 import cn.maxcj.system.mapper.SysOperLogMapper;
 import cn.maxcj.system.service.ISysOperLogService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Slf4j
 @Service
 public class SysOperLogServiceImpl implements ISysOperLogService {
     @Autowired

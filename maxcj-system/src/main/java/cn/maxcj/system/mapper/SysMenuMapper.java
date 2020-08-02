@@ -2,6 +2,7 @@ package cn.maxcj.system.mapper;
 
 import cn.maxcj.system.domain.SysMenu;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Repository
 public interface SysMenuMapper {
     /**
      * 查询系统所有菜单（含按钮）

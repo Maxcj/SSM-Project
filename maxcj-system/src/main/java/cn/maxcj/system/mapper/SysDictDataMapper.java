@@ -2,6 +2,7 @@ package cn.maxcj.system.mapper;
 
 import cn.maxcj.system.domain.SysDictData;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Repository
 public interface SysDictDataMapper {
     /**
      * 根据条件分页查询字典数据

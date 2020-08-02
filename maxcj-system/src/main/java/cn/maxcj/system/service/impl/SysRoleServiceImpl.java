@@ -15,6 +15,7 @@ import cn.maxcj.system.mapper.SysRoleMapper;
 import cn.maxcj.system.mapper.SysRoleMenuMapper;
 import cn.maxcj.system.mapper.SysUserRoleMapper;
 import cn.maxcj.system.service.ISysRoleService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,6 +27,7 @@ import java.util.*;
  *
  * @author ruoyi
  */
+@Slf4j
 @Service
 public class SysRoleServiceImpl implements ISysRoleService {
     @Autowired
@@ -120,7 +122,7 @@ public class SysRoleServiceImpl implements ISysRoleService {
      */
     @Override
     public boolean deleteRoleById(Long roleId) {
-        return roleMapper.deleteRoleById(roleId) > 0 ? true : false;
+        return roleMapper.deleteRoleById(roleId) > 0;
     }
 
     /**

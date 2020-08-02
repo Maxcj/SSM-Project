@@ -5,6 +5,7 @@ import cn.maxcj.common.utils.StringUtils;
 import cn.maxcj.system.domain.SysUserOnline;
 import cn.maxcj.system.mapper.SysUserOnlineMapper;
 import cn.maxcj.system.service.ISysUserOnlineService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Slf4j
 @Service
 public class SysUserOnlineServiceImpl implements ISysUserOnlineService {
     @Autowired

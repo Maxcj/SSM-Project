@@ -8,6 +8,7 @@ import cn.maxcj.common.utils.StringUtils;
 import cn.maxcj.system.domain.SysConfig;
 import cn.maxcj.system.mapper.SysConfigMapper;
 import cn.maxcj.system.service.ISysConfigService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Slf4j
 @Service
 public class SysConfigServiceImpl implements ISysConfigService {
     @Autowired

@@ -4,6 +4,7 @@ import cn.maxcj.common.core.text.Convert;
 import cn.maxcj.system.domain.SysNotice;
 import cn.maxcj.system.mapper.SysNoticeMapper;
 import cn.maxcj.system.service.ISysNoticeService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @author ruoyi
  * @date 2018-06-25
  */
+@Slf4j
 @Service
 public class SysNoticeServiceImpl implements ISysNoticeService {
     @Autowired

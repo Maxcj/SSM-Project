@@ -3,12 +3,13 @@
     <!-- 日志存放路径 -->
     <property name="log.path" value="/Users/maxcj/temp/logs"/>
     <!-- 日志输出格式 -->
-    <property name="log.pattern" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{20} - [%method,%line] - %msg%n"/>
+    <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{50}) - [%method,%line] - %highlight(%msg) %n"/>
+    <property name="console.pattern" value="%date{yyyy-MM-dd HH:mm:ss.SSS} | %highlight(%-5level) | %boldYellow(%thread) | %cyan(%logger) | - [%method,%line] - %msg%n"/>
 
     <!-- 控制台输出 -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>${log.pattern}</pattern>
+            <pattern>${console.pattern}</pattern>
         </encoder>
     </appender>
 
